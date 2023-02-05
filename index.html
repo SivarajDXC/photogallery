@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe/dist/photoswipe.css">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="pswp-gallery" id="my-gallery">
+            <a href="./samples/1.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./samples/thumbnails/1_tn.jpg" height="200" width="200" alt="" />
+            </a>
+            <a href="./samples/2.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./samples/thumbnails/2_tn.jpg" height="200" width="200" alt="" />
+            </a>
+            <a href="./samples/3.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./samples/thumbnails/3_tn.jpg" height="200" width="200" alt="" />
+            </a>
+            <a href="./samples/4.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./samples/thumbnails/4_tn.jpg" height="200" width="200" alt="" />
+            </a>
+            <a href="./samples/5.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./samples/thumbnails/5_tn.jpg" height="200" width="200" alt="" />
+            </a>
+            <a href="./samples/6.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./samples/thumbnails/6_tn.jpg" height="200" width="200" alt="" />
+            </a>
+            <a href="./samples/7.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./samples/thumbnails/7_tn.jpg" height="200" width="200" alt="" />
+            </a>
+            <a href="./samples/8.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./samples/thumbnails/8_tn.jpg" height="200" width="200" alt="" />
+            </a>
+            <a href="./samples/9.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./samples/thumbnails/9_tn.jpg" height="200" width="200" alt="" />
+            </a>
+        </div>
+    </div>
+    <script type="module">
+        // Include Lightbox 
+        import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
+        const lightbox = new PhotoSwipeLightbox({
+            // may select multiple "galleries"
+            gallery: '#my-gallery',
+
+            // Elements within gallery (slides)
+            children: 'a',
+
+            // setup PhotoSwipe Core dynamic import
+            pswpModule: () => import('https://unpkg.com/photoswipe')
+        });
+        lightbox.init();
+    </script>
+</body>
+
+</html>
