@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe/dist/photoswipe.css">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="pswp-gallery" id="my-gallery">
+	          <a href="./images/img_sample.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/img_tm_sample.jpg" height="200" width="200" alt="" />
+            </a>
+            <!--a href="./images/Img002.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/Img002_tm.jpg" height="200" width="200" alt="" />
+            </a>
+            <a href="./images/Img003.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/Img003_tm.jpg" height="200" width="200" alt="" />
+            </a>
+            <a href="./images/Img004.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/Img004_tm.jpg" height="200" width="200" alt="" />
+            </a>
+             <a href="./images/Img005.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/Img005_tm.jpg" height="200" width="200" alt="" />
+            </a>
+             <a href="./images/Img006.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/Img006_tm.jpg" height="200" width="200" alt="" />
+            </a>
+            <a href="./images/Img007.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/Img007_tm.jpg" height="200" width="200" alt="" />
+            </a>
+	     <a href="./images/Img008.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/Img008_tm.jpg" height="200" width="200" alt="" />
+            </a>
+	    <a href="./images/Img009.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+               <img src="./images/thumbnails/Img009_tm.jpg" height="200" width="200" alt="" />
+            </a>
+	      <a href="./images/Img010.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/Img010_tm.jpg" height="200" width="200" alt="" />
+            </a>
+	      <a href="./images/Img011.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/Img011_tm.jpg" height="200" width="200" alt="" />
+            </a>
+	      <a href="./images/Img012.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/Img012_tm.jpg" height="200" width="200" alt="" />
+            </a> 
+		<a href="./images/Img013.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/Img013_tm.jpg" height="200" width="200" alt="" />
+            </a> 
+		<a href="./images/Img014.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/Img014_tm.jpg" height="200" width="200" alt="" />
+            </a> 
+		<a href="./images/Img015.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/Img015_tm.jpg" height="200" width="200" alt="" />
+            </a> 
+			<a href="./images/Img016.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/Img016_tm.jpg" height="200" width="200" alt="" />
+            </a>   
+			 <a href="./images/Img017.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/Img017_tm.jpg" height="200" width="200" alt="" />
+            </a>   
+			 <a href="./images/Img018.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/Img018_tm.jpg" height="200" width="200" alt="" />
+            </a>
+			 <a href="./images/Img019.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/Img019_tm.jpg" height="200" width="200" alt="" />
+            </a>   
+             <a href="./images/Img021.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/Img021_tm.jpg" height="200" width="200" alt="" />
+            </a>
+			<a href="./images/Img022.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/Img022_tm.jpg" height="200" width="200" alt="" />
+                  </a>
+                <a href="./images/Img023.jpg" data-pswp-width="640" data-pswp-height="960" target="_blank">
+                <img src="./images/thumbnails/Img023_tm.jpg" height="200" width="200" alt="" />
+            </a-->
+
+        </div>
+    </div>
+    <script type="module">
+        // Include Lightbox 
+        import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
+        const lightbox = new PhotoSwipeLightbox({
+            // may select multiple "galleries"
+            gallery: '#my-gallery',
+
+            // Elements within gallery (slides)
+            children: 'a',
+
+            // setup PhotoSwipe Core dynamic import
+            pswpModule: () => import('https://unpkg.com/photoswipe')
+        });
+        lightbox.init();
+    </script>
+</body>
+
+</html>
+
+Copilot
+Upgrade to Pro
+ 
+for unlimited access.
+raw.githubusercontent.com
+Ask a follow-up question
+Ask
